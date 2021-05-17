@@ -58,7 +58,7 @@ a {
 }
 .btn--small {
   font-size: 0.875rem;
-  width: 14em;
+  width: 14.5em;
   flex-shrink: 0;
 }
 @media (max-width: 650px) {
@@ -99,34 +99,14 @@ a {
   list-style-type: none;
   justify-content: center;
   display: flex;
-  gap: 3.82vw;
+}
+.top-header li {
+  margin-left: 4vw;
 }
 .top-header li:hover {
   font-weight: 700;
   color: white;
   text-decoration: underline;
-}
-
-.sec-showcase-inner {
-  text-align: center;
-  width: 45rem;
-  max-width: 100%;
-  margin: 0 auto;
-  z-index: 1;
-}
-.sec-showcase-inner img {
-  max-width: 100%;
-}
-.sec-showcase-inner h1 {
-  font-size: 2.5rem;
-  padding: 0.75em 0;
-}
-.sec-showcase-inner p {
-  font-size: 1.25rem;
-  max-width: 100%;
-  padding: 0 2.6em;
-  margin: 0 auto;
-  margin-bottom: 2rem;
 }
 
 .sec-showcase {
@@ -147,12 +127,35 @@ a {
   width: 100%;
 }
 
+.sec-showcase-inner {
+  text-align: center;
+  width: 45rem;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.sec-showcase-inner img {
+  max-width: 100%;
+}
+.sec-showcase-inner h1 {
+  font-size: 2.5rem;
+  padding: 0.75em 0 0.8em 0;
+}
+.sec-showcase-inner p {
+  font-size: 1.25rem;
+  max-width: 100%;
+  padding: 0 2.6em;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
 #features {
   scroll-margin: 10vh 0 0 0;
 }
 
 .sec-features-top {
   margin: 0 auto;
+  margin-bottom: 3rem;
   width: 64rem;
   max-width: 100%;
   z-index: 1;
@@ -166,29 +169,34 @@ a {
   }
 }
 .sec-features-top .card {
-  padding: 0 4.2em 6em 4.2em;
+  margin: 0 4.2em 6em 4.2em;
   text-align: center;
   z-index: inherit;
 }
+.sec-features-top .div-feat-icon {
+  height: 5em;
+}
 .sec-features-top h2 {
   font-size: 1.25rem;
-  padding: 1em 0 0.5em 0;
+  padding: 1.4em 0 0.2em 0;
 }
 .sec-features-top p {
   font-size: 0.875em;
-}
-.sec-features-top::after, .sec-features-top::before {
-  content: "";
-  display: table;
-}
-.sec-features-top::after {
-  clear: both;
+  max-width: 24rem;
+  width: 100%;
 }
 
 .sec-features-bot {
-  padding: 0 6em;
+  padding: 0 6.5em;
   display: flow-root;
   padding-bottom: 6em;
+}
+.sec-features-bot::after, .sec-features-bot::before {
+  content: "";
+  display: table;
+}
+.sec-features-bot::after {
+  clear: both;
 }
 @media (max-width: 650px) {
   .sec-features-bot {
@@ -233,17 +241,19 @@ a {
   padding-bottom: 24px;
 }
 .sec-features-bot a {
-  padding-bottom: 6px;
-  border-bottom: 1px solid #65e2d9;
+  padding-bottom: 2px;
+  border-bottom: 1.5px solid #65e2d9;
   display: inline-flex;
 }
 .sec-features-bot a img {
-  padding: 0 5px;
+  padding-left: 7px;
+  transform: translateY(2px);
   align-self: center;
 }
 
 .sec-team {
-  padding: 80px 128px;
+  position: relative;
+  padding: 80px 140px;
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -254,22 +264,20 @@ a {
   }
 }
 .sec-team .quote {
-  position: relative;
-  top: -35px;
-  left: -8px;
-}
-.sec-team .quote img {
   position: absolute;
+  top: 45px;
+  left: 132px;
 }
 .sec-team .card-testimonials {
   background-color: #202a3c;
-  padding: 40px 24px 20px;
+  padding: 40px 26px 24px;
   border-radius: 4px;
   z-index: 1;
   font-size: 15px;
+  line-height: 1.4;
 }
 .sec-team .card-testimonials .testimonial {
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 .sec-team .card-testimonials .cont-profiles {
   display: inline-flex;
@@ -281,13 +289,16 @@ a {
 }
 .sec-team .card-testimonials .profiles {
   display: inline-block;
-  padding-left: 10px;
+  padding-top: 4px;
+  padding-left: 8px;
+  line-height: 1.6;
 }
 .sec-team .card-testimonials .name {
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: 700;
 }
 .sec-team .card-testimonials .title {
-  font-size: 8px;
+  font-size: 9px;
 }
 
 .sec-sign-in {
@@ -299,7 +310,7 @@ a {
   max-width: 100%;
   margin: 0 auto;
   border-radius: 1em;
-  padding: 2.5em 5em;
+  padding: 2.5em 75px;
   box-shadow: 5px 5px 5px #09101b;
   transform: translateY(120px);
 }
@@ -342,73 +353,104 @@ a {
 }
 
 footer {
-  padding: 12.5rem 6rem;
+  padding: 12.7rem 4.6875rem 0 7.5rem;
   background-color: #0b1523;
+}
+@media (max-width: 650px) {
+  footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .foot-columns {
   display: flex;
-  justify-content: space-between;
-  padding-top: 2rem;
+  margin-top: 24px;
+  margin-bottom: 7rem;
+  flex-wrap: wrap;
 }
 @media (max-width: 900px) {
   .foot-columns {
     flex-direction: column;
   }
 }
+@media (max-width: 750px) {
+  .foot-columns .foot {
+    margin: 0;
+  }
+}
+.foot-columns .foot:nth-child(1) {
+  margin-right: 5.3125rem;
+  margin-right: 5.9vw;
+}
+.foot-columns .foot:nth-child(2) {
+  margin-right: 9.125em;
+  margin-right: 10.1389vw;
+}
+.foot-columns .foot:nth-child(3) {
+  margin-right: 7em;
+  margin-right: 7.7778vw;
+}
 .foot-columns .foot-col-1 {
   display: flex;
 }
 .foot-columns .foot-col-1 .div-icon {
   display: inline-block;
+  transform: translateY(8px);
 }
 .foot-columns .foot-col-1 .address {
-  max-width: 21rem;
-  margin-left: 1.5em;
+  font-size: initial;
+  width: 21rem;
+  margin-left: 28px;
 }
 .foot-columns .foot-col-2 .div-icon {
   display: inline-block;
+  transform: translateY(5px);
 }
 .foot-columns .foot-col-2 .div-phone,
 .foot-columns .foot-col-2 .div-email {
   margin-bottom: 1em;
 }
-.foot-columns .foot-col-2 .div-phone span,
-.foot-columns .foot-col-2 .div-email span {
-  margin-left: 1em;
+.foot-columns .foot-col-2 .div-phone .fylo-info,
+.foot-columns .foot-col-2 .div-email .fylo-info {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 20px;
 }
-.foot-columns .foot-col-3-1,
-.foot-columns .foot-col-3-2 {
-  margin: 0 3.5em;
+.foot-columns .foot-col-3 {
+  display: flex;
+  gap: 5rem;
 }
-.foot-columns .foot-link {
+@media (max-width: 750px) {
+  .foot-columns .foot-col-3 {
+    flex-direction: column;
+  }
+}
+.foot-columns .foot-col-3 .foot-link {
   display: block;
-  padding-bottom: 1em;
+  padding-bottom: 14px;
 }
-.foot-columns .foot-link:hover {
+.foot-columns .foot-col-3 .foot-link:hover {
   font-weight: 700;
 }
 
 .foot-col-4 {
   display: flex;
+  justify-content: center;
 }
 .foot-col-4 .fa-icon {
-  width: 30px;
-  height: 30px;
+  width: 1.9rem;
+  height: 1.9rem;
   border: 1px solid white;
   border-radius: 50%;
+  margin: 0 6px;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5px;
-  color: white;
 }
 .foot-col-4 .fa-icon:hover {
   color: #65e2d9;
-}
-
-.text-src {
-  background-color: pink;
 }
 
 /*# sourceMappingURL=style.css.map */

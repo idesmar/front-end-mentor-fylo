@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <!-- ? font awesome -->
   <script src="https://kit.fontawesome.com/72c84da890.js" crossorigin="anonymous"></script>
-  
+
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
   <!-- ? Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -34,20 +34,20 @@
 </head>
 
 <body>
-  
+
 
   <div class="intro">
     <!-- <div class="sec"> -->
-      <header class="top-header">
-        <img class="logo" src="/images/logo.svg" alt="fylo logo">
-        <nav>
-          <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#sign-in">Sign In</a></li>
-          </ul>
-        </nav>
-      </header>
+    <header class="top-header">
+      <img class="logo" src="/images/logo.svg" alt="fylo logo">
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#sign-in">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
     <!-- </div> -->
   </div>
 
@@ -69,26 +69,35 @@
   <section class="sec-features" id="features">
     <div class="sec-features-top">
       <div class="card">
-        <img class="feat-icon" src="/images/icon-access-anywhere.svg" alt="">
+        <div class="div-feat-icon">
+          <img class="feat-icon" src="/images/icon-access-anywhere.svg" alt="">
+        </div>
         <h2>Access your files, anywhere</h2>
-        <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+        <p>The ability to use a smartphone, tablet, or computer <br>to access your account means your files follow you everywhere.</p>
       </div>
       <div class="card">
-        <img class="feat-icon" src="/images/icon-security.svg" alt="">
+        <div class="div-feat-icon">
+          <img class="feat-icon" src="/images/icon-security.svg" alt="">
+        </div>
         <h2>Security you can trust</h2>
         <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
       </div>
       <div class="card">
-        <img class="feat-icon" src="/images/icon-collaboration.svg" alt="">
+        <div class="div-feat-icon">
+          <img class="feat-icon" src="/images/icon-collaboration.svg" alt="">
+        </div>
         <h2>Real-time collaboration</h2>
         <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
       </div>
       <div class="card">
-        <img class="feat-icon" src="/images/icon-any-file.svg" alt="">
+        <div class="div-feat-icon">
+          <img class="feat-icon" src="/images/icon-any-file.svg" alt="">
+        </div>
         <h2>Store any type of file</h2>
-        <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+        <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file <br>types to be securely stored and shared.</p>
       </div>
     </div>
+
     <div class="sec-features-bot sec">
       <img class="illustration-stay-productive" src="/images/illustration-stay-productive.png" alt="">
       <div class="cont-productivity">
@@ -104,7 +113,7 @@
     <div class="quote">
       <img src="/images/bg-quotes.png" alt="">
     </div>
-    
+
     <div class="card-testimonials">
       <p class="testimonial">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
       <div class="cont-profiles">
@@ -153,9 +162,9 @@
 
   <footer>
     <img src="/images/logo.svg" alt="" class="logo">
-    
+
     <div class="foot-columns">
-      <div class="foot-col-1">
+      <div class="foot-col-1 foot">
         <div class="div-icon">
           <img src="images/icon-location.svg" alt="" class="icon">
         </div>
@@ -166,13 +175,13 @@
 
 
 
-      <div class="foot-col-2">
+      <div class="foot-col-2 foot">
         <div class="div-phone">
           <div class="div-icon">
             <img src="/images/icon-phone.svg" alt="" class="icon">
           </div>
 
-          <span>+1-543-123-4567</span>
+          <span class="fylo-info">+1-543-123-4567</span>
         </div>
 
         <div class="div-email">
@@ -180,12 +189,12 @@
             <img src="/images/icon-email.svg" alt="" class="icon">
           </div>
 
-          <span>example@fylo.com</span>
+          <span class="fylo-info">example@fylo.com</span>
         </div>
       </div>
 
 
-      <!-- <div class="foot-col-3"> -->
+      <div class="foot-col-3 foot">
         <div class="foot-col-3-1">
           <a href="#" class="foot-link">About Us</a>
           <a href="#" class="foot-link">Jobs</a>
@@ -199,24 +208,28 @@
           <a href="#" class="foot-link">Privacy</a>
         </div>
 
-      <!-- </div> -->
+      </div>
 
-      <div class="foot-col-4">
-        <a href="#" target="_blank">
-          <span class="fa-icon">
-            <i class="fab fa-facebook-f"></i>
-          </span>
-        </a>
-        <a href="#" target="_blank">
-          <span class="fa-icon">
+      <div class="foot-col-4 foot">
+        <span>
+          <a href="#" target="_blank" class="fa-icon">
+            <div class="fa-icon-inner">
+
+              <i class="fab fa-facebook-f"></i>
+            </div>
+          </a>
+        </span>
+
+        <span>
+          <a href="#" target="_blank" class="fa-icon">
             <i class="fab fa-twitter"></i>
-          </span>
-        </a>
-        <a href="#" target="_blank">
-          <span class="fa-icon">
+          </a>
+        </span>
+        <span>
+          <a href="#" target="_blank" class="fa-icon">
             <i class="fab fa-instagram"></i>
-          </span>
-        </a>
+          </a>
+        </span>
 
 
 
