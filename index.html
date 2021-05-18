@@ -39,7 +39,10 @@
   <div class="intro">
     <!-- <div class="sec"> -->
     <header class="top-header">
-      <img class="logo" src="/images/logo.svg" alt="fylo logo">
+      <div class="div-logo">
+        <img class="logo" src="/images/logo.svg" alt="fylo logo">
+
+      </div>
       <nav>
         <ul>
           <li><a href="#features">Features</a></li>
@@ -53,8 +56,8 @@
 
   <section class="sec-showcase intro">
 
-    <div class="bg-curvy-desktop">
-      <img src="/images/bg-curvy-desktop.svg" alt="">
+    <div class="bg-container">
+      <img src="/images/bg-curvy-desktop.svg" alt="" class="img-bg-desktop">
     </div>
 
     <div class="sec-showcase-inner">
@@ -73,7 +76,7 @@
           <img class="feat-icon" src="/images/icon-access-anywhere.svg" alt="">
         </div>
         <h2>Access your files, anywhere</h2>
-        <p>The ability to use a smartphone, tablet, or computer <br>to access your account means your files follow you everywhere.</p>
+        <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
       </div>
       <div class="card">
         <div class="div-feat-icon">
@@ -94,7 +97,7 @@
           <img class="feat-icon" src="/images/icon-any-file.svg" alt="">
         </div>
         <h2>Store any type of file</h2>
-        <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file <br>types to be securely stored and shared.</p>
+        <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
       </div>
     </div>
 
@@ -109,41 +112,43 @@
     </div>
   </section>
   <section class="sec-team sec" id="team">
+    <div class="sec-team-inner">
+      <div class="quote">
+        <img src="/images/bg-quotes.png" alt="">
+      </div>
+  
+      <div class="card-testimonials">
+        <p class="testimonial">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <div class="cont-profiles">
+          <img src="/images/profile-1.jpg" alt="" class="display-photo">
+          <div class="profiles">
+            <p class="name">Satish Patel</p>
+            <p class="title">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-testimonials">
+        <p class="testimonial">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <div class="cont-profiles">
+          <img src="/images/profile-2.jpg" alt="" class="display-photo">
+          <div class="profiles">
+            <p class="name">Bruce McKenzie</p>
+            <p class="title">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-testimonials">
+        <p class="testimonial">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <div class="cont-profiles">
+          <img src="/images/profile-3.jpg" alt="" class="display-photo">
+          <div class="profiles">
+            <p class="name">Iva Boyd</p>
+            <p class="title">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class="quote">
-      <img src="/images/bg-quotes.png" alt="">
-    </div>
-
-    <div class="card-testimonials">
-      <p class="testimonial">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-      <div class="cont-profiles">
-        <img src="/images/profile-1.jpg" alt="" class="display-photo">
-        <div class="profiles">
-          <p class="name">Satish Patel</p>
-          <p class="title">Founder & CEO, Huddle</p>
-        </div>
-      </div>
-    </div>
-    <div class="card-testimonials">
-      <p class="testimonial">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-      <div class="cont-profiles">
-        <img src="/images/profile-2.jpg" alt="" class="display-photo">
-        <div class="profiles">
-          <p class="name">Bruce McKenzie</p>
-          <p class="title">Founder & CEO, Huddle</p>
-        </div>
-      </div>
-    </div>
-    <div class="card-testimonials">
-      <p class="testimonial">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-      <div class="cont-profiles">
-        <img src="/images/profile-3.jpg" alt="" class="display-photo">
-        <div class="profiles">
-          <p class="name">Iva Boyd</p>
-          <p class="title">Founder & CEO, Huddle</p>
-        </div>
-      </div>
-    </div>
   </section>
 
   <section class="sec-sign-in" id="sign-in">
@@ -161,88 +166,111 @@
 
 
   <footer>
-    <img src="/images/logo.svg" alt="" class="logo">
+    <div class="footer-inner">
 
-    <div class="foot-columns">
-      <div class="foot-col-1 foot">
-        <div class="div-icon">
-          <img src="images/icon-location.svg" alt="" class="icon">
-        </div>
-        <div class="address">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-        </div>
-      </div>
-
-
-
-      <div class="foot-col-2 foot">
-        <div class="div-phone">
+      <img src="/images/logo.svg" alt="" class="logo">
+      <div class="foot-columns">
+        <div class="foot-col-1 foot">
           <div class="div-icon">
-            <img src="/images/icon-phone.svg" alt="" class="icon">
+            <img src="images/icon-location.svg" alt="" class="icon">
           </div>
-
-          <span class="fylo-info">+1-543-123-4567</span>
-        </div>
-
-        <div class="div-email">
-          <div class="div-icon">
-            <img src="/images/icon-email.svg" alt="" class="icon">
+          <div class="address">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
           </div>
-
-          <span class="fylo-info">example@fylo.com</span>
         </div>
-      </div>
-
-
-      <div class="foot-col-3 foot">
-        <div class="foot-col-3-1">
-          <a href="#" class="foot-link">About Us</a>
-          <a href="#" class="foot-link">Jobs</a>
-          <a href="#" class="foot-link">Press</a>
-          <a href="#" class="foot-link">Blog</a>
-        </div>
-
-        <div class="foot-col-3-2">
-          <a href="#" class="foot-link">Contact Us</a>
-          <a href="#" class="foot-link">Terms</a>
-          <a href="#" class="foot-link">Privacy</a>
-        </div>
-
-      </div>
-
-      <div class="foot-col-4 foot">
-        <span>
-          <a href="#" target="_blank" class="fa-icon">
-            <div class="fa-icon-inner">
-
-              <i class="fab fa-facebook-f"></i>
+  
+  
+  
+        <div class="foot-col-2 foot">
+          <div class="div-phone">
+            <div class="div-icon">
+              <img src="/images/icon-phone.svg" alt="" class="icon">
             </div>
-          </a>
-        </span>
-
-        <span>
-          <a href="#" target="_blank" class="fa-icon">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </span>
-        <span>
-          <a href="#" target="_blank" class="fa-icon">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </span>
-
-
-
-
+  
+            <span class="fylo-info">+1-543-123-4567</span>
+          </div>
+  
+          <div class="div-email">
+            <div class="div-icon">
+              <img src="/images/icon-email.svg" alt="" class="icon">
+            </div>
+  
+            <span class="fylo-info">example@fylo.com</span>
+          </div>
+        </div>
+  
+  
+        <div class="foot-col-3 foot">
+          <div class="foot-col-3-1">
+            <div class="foot-link">
+              <a href="#">About Us</a>
+              
+            </div>
+            <div class="foot-link">
+              <a href="#">Jobs</a>
+  
+            </div>
+            <div class="foot-link">
+              <a href="#">Press</a>
+  
+            </div>
+            <div class="foot-link">
+              <a href="#">Blog</a>
+  
+            </div>
+          </div>
+  
+          <div class="foot-col-3-2">
+            <div class="foot-link">
+              <a href="#">Contact Us</a>
+              
+            </div>
+            <div class="foot-link">
+              <a href="#">Terms</a>
+  
+            </div>
+            <div class="foot-link">
+              <a href="#">Privacy</a>
+  
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="foot-col-4 foot">
+          <span>
+            <a href="#" target="_blank" class="fa-icon">
+              <div class="fa-icon-inner">
+  
+                <i class="fab fa-facebook-f"></i>
+              </div>
+            </a>
+          </span>
+  
+          <span>
+            <a href="#" target="_blank" class="fa-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </span>
+          <span>
+            <a href="#" target="_blank" class="fa-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </span>
+  
+  
+  
+  
+        </div>
       </div>
     </div>
 
-    <div class="bottom">
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">arca</a>.
-      </p>
-    </div>
+  <div class="base">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">arca</a>.
+    </p>
+  </div>
   </footer>
 
 
